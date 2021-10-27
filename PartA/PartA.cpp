@@ -45,10 +45,10 @@ int main()
   cout << " = " << endl;
   cout << b_prime[0] << "\n" << b_prime[1] << endl;
 
-  double 
+  double u_two = b_prime[1]/A_prime[1][1];
+  double u_one = (1/A_prime[0][0]) * (b_prime[0] - u_two * A_prime[0][1]);
 
+  double u[2] = {u_one, u_two}; 
 
-
-
-
+  cout << "u_one: " << u_one << "\nu_two: "<< u_two << endl;
 }
