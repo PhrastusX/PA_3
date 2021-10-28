@@ -102,6 +102,7 @@ class PartA
 
       //compute u vector
       else {
+        
        //back substitution to find vector components for solution
       double u_two = b_prime[1]/A_prime[1][1];
 
