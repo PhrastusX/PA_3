@@ -7,8 +7,6 @@
 
 using namespace std;
 
-
-
 int main() 
 {
 
@@ -46,12 +44,26 @@ int main()
   cout << a << " " << b << " " << c << endl;
 
   //calculate roots
+  //root one is dominant
   double root1 = (-b + sqrt(pow(b,2) - 4*a*c))/2.0;
   double root2 = (-b - sqrt(pow(b,2) - 4*a*c))/2.0;
 
   cout << root1 << " " << root2 << endl;
 
   //find dominant eigen value
+
+  //if absolute value of root1 is less than root 2 swap them
+  if(abs(root1) < abs(root2)){
+    double temp;
+    temp = root1;
+    root1 = root2;
+    root2 = temp;
+  }
+
+  double mat1[4];
+  double mat2[4];
   
+  
+
 
 }
