@@ -131,34 +131,34 @@ class PartB
       }
    
 
-  }
-  //find r1 and r2 using mat1 and mat2
+    }
+    //find r1 and r2 using mat1 and mat2
 
-  //gauss elimination to mat1 and mat2
+    //gauss elimination to mat1 and mat2
 
-  //calculate sheer matrix
-  double S1[4];
-  double S2[4];
+    //calculate sheer matrix
+    double S1[4];
+    double S2[4];
 
-  S1[0] = 1;
-  S2[0] = 1;
+    S1[0] = 1;
+    S2[0] = 1;
 
-  S1[1] = 0;
-  S2[1] = 0;
+    S1[1] = 0;
+    S2[1] = 0;
 
-  S1[2] = - (mat1[2]/mat1[0]);
-  S2[2] = - (mat2[2]/mat2[0]);
+    S1[2] = - (mat1[2]/mat1[0]);
+    S2[2] = - (mat2[2]/mat2[0]);
 
-  S1[3] = 1;
-  S2[3] = 1;
+    S1[3] = 1;
+    S2[3] = 1;
 
   
-  //multiply sheer matrix by mat and mat2 
-  double A_prime1[4];
-  double A_prime2[4];
+    //multiply sheer matrix by mat and mat2 
+    double A_prime1[4];
+    double A_prime2[4];
 
-  mult2x2(A_prime1, mat1, S1);
-  mult2x2(A_prime2, mat2, S2);
+    mult2x2(A_prime1, mat1, S1);
+   mult2x2(A_prime2, mat2, S2);
 
 
  
