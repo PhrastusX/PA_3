@@ -20,6 +20,7 @@ class PartB
 
     }
 
+    //will store data in A, S * mat format
     void mult2x2(double A_prime[4], double mat[4], double S[4]){
 
       A_prime[0] = S[0] * mat[0] + S[1] * mat[2];
@@ -29,13 +30,14 @@ class PartB
       A_prime[3] = S[2] * mat[1] + S[3] * mat[3];
     }
 
-
+    //length of a vector
     double calc_length(double a, double b){
 
       double length = sqrt(pow(a,2) + pow(b,2));
       return length;
     }
 
+    //checks to see if the matrix are identical checks if they are nearly the same number
     bool is_same_mat(double mat1[4], double mat2[4]){
       int val1 = 0;
       int val2;
@@ -97,7 +99,7 @@ class PartB
   double root2 = (-b - sqrt(pow(b,2) - 4*a*c))/2.0;
   
   if (isnan(-root1) && isnan(-root2)){
-    out_file << "No real eigenvalues"<< endl;
+    out_file <<  "No real eigenvalues"<< endl;
   }
   else{
 
@@ -181,7 +183,7 @@ class PartB
   mult2x2(test1, test, R);
   
 
-  out_file << lambda[0] << " " << lambda[1] << "\n" << lambda[2] << " " << lambda[3] << endl;
+  out_file << fixed << setprecision(4) << lambda[0] << " " << lambda[1] << "\n" << lambda[2] << " " << lambda[3] << endl;
   out_file << R[0] << " " << R[1] << "\n" << R[2] << " " << R[3] << endl;
   out_file << test1[0] <<" " << test1[1] << "\n" << test1[2] << " " << test1[3] << endl;
 
