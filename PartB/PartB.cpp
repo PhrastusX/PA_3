@@ -6,10 +6,7 @@
 #include <string>
 
 using namespace std;
-void check_array(double A[4]);
-void mult2x2(double A_prime[4], double mat[4], double S[4]);
-double calc_length(double a, double b);
-bool is_same_mat(double mat1[4], double mat2[4]);
+
 class PartB
 {
   private:
