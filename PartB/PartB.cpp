@@ -14,6 +14,8 @@ class PartB
     double A2x2[4];
     string in_string;
     string out_string;
+
+    //used for testing
     void check_array(double A[4]){
 
       cout << A[0] << " " << A[1] << "\n" << A[2] << " " << A[3] << endl;
@@ -40,9 +42,7 @@ class PartB
     //checks to see if the matrix are identical checks if they are nearly the same number
     bool is_same_mat(double mat1[4], double mat2[4]){
       int val1 = 0;
-      int val2;
-      int val3;
-      int val4;
+
 
       for (int i = 0; i<4; i++){
         if ( abs(mat1[i] - mat2[i]) < .1){
